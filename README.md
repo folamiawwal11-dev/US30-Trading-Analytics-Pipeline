@@ -2,7 +2,9 @@
 
 An end-to-end data engineering solution that models US30 trade executions in MySQL and automatically extracts, formats, and renders portfolio performance curves using Python.
 
-![Equity Curve](equity_curve.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/folamiawwal11-dev/US30-Trading-Analytics-Pipeline/main/equity_curve.png" alt="US30 Cumulative Equity Curve" width="100%"/>
+</p>
 
 ## Key Performance Metrics
 - **Total Trades:** 24 Executed Trades
@@ -16,4 +18,4 @@ An end-to-end data engineering solution that models US30 trade executions in MyS
 
 ## System Architecture
 1. **MySQL Database (`trading_analytics`):** Stores raw trade execution logs and executes server-side aggregation views (`vw_running_equity_curve`, `vw_setup_tier_performance`).
-2. **Python Engine:** Authenticates database connection via `mysql-connector-python`, executes queries into `pandas` DataFrames, and renders dark-themed annotated equity curves using `seaborn` & `matplotlib`.****
+2. **Python Engine:** Authenticates database connection via `mysql-connector-python`, executes queries into `pandas` DataFrames, and renders dark-themed annotated equity curves using `seaborn` & `matplotlib`.
